@@ -38,7 +38,8 @@ const KfTabBar = memo((props: BottomTabBarProps) => {
           <TouchableOpacity
             key={label}
             style={styles.tabItem}
-            onPress={onPress}>
+            onPress={onPress}
+          >
             <TabItem
               image={images[index]}
               label={label}
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
   tabBarWrapper: {
     flexDirection: 'row',
     height: 60,
-    backgroundColor: '#eceeeb',
+    backgroundColor: '#ddd',
   },
   tabItem: {
     flex: 1,
